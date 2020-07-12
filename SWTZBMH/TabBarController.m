@@ -61,10 +61,10 @@
         
         NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
         attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-        attrs[NSForegroundColorAttributeName] = CharacterGrayColor;
+        attrs[NSForegroundColorAttributeName] = CharacterColor70;
         NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
         selectedAttrs[NSFontAttributeName] = attrs[NSFontAttributeName];
-        selectedAttrs[NSForegroundColorAttributeName] = TabberGreen;
+        selectedAttrs[NSForegroundColorAttributeName] = RedColor;
         UITabBarItem *item = [UITabBarItem appearance];
         [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
         [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];

@@ -20,5 +20,5 @@ pod 'UMCShare/Social/ReducedQQ'
 pod 'UMCPush'
 pod 'AlipaySDK-iOS'
 pod 'WechatOpenSDK'
-
+pod 'TYPagerController'
 end

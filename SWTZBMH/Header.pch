@@ -38,9 +38,21 @@
 #import <UMShare/UMShare.h>
 #import <UMCommon/UMCommon.h>
 
+#import <Photos/Photos.h>
+#import <Masonry.h>
 
 #import "LTSCEventBus.h"
 #import "LTSCNoneView.h"
+
+#import "SWTNavitageView.h"
+#import "SWTBottomBt.h"
+#import "TYPagerController.h"
+#import "TYTabPagerBar.h"
+#import "MXPhotoPickerController.h"
+#import "UIViewController+MXPhotoPicker.h"
+#import "zkPhotoShowVC.h"
+
+
 
 #define iOS11Later ([UIDevice currentDevice].systemVersion.floatValue >= 11.0f)
 
@@ -55,29 +67,35 @@
 
 #define kFont(x) [UIFont systemFontOfSize:x]
 
+#define Weak(weakSelf) __weak typeof(self) weakSelf = self;
+#define RedColor [UIColor colorWithRed:163.0/255.0 green:41.0/255.0 blue:59.0/255.0 alpha:1]
 
+ #define RedLightColor RGB(249, 0, 5)
+ #define RedBackColor RGB(253, 216, 217)
 //黄底字体纯黑
 #define WhiteColor [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1]
 //白底黑字
-#define CharacterBlackColor [UIColor colorWithRed:30/255.0 green:30/255.0 blue:30/255.0 alpha:1]
+#define CharacterColor50 [UIColor colorWithRed:50/255.0 green:50/255.0 blue:50/255.0 alpha:1]
 //白底淡黑
-#define CharacterGrayColor [UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1]
+#define CharacterColor102 [UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1]
 //白底灰字
-#define CharacterBackColor [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1]
+#define CharacterColor153 [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1]
 //时间用
-#define CharacterLightGrayColor [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:1]
-#define CharacterDarkColor [UIColor colorWithRed:70/255.0 green:70/255.0 blue:70/255.0 alpha:1]
+#define CharacterColor183 [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:1]
+#define CharacterColor70 [UIColor colorWithRed:70/255.0 green:70/255.0 blue:70/255.0 alpha:1]
 
+#define RGB(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
 
 //背景灰
-#define BackgroundColor [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1]
+#define BackgroundColor [UIColor colorWithRed:244/255.0 green:246/255.0 blue:245/255.0 alpha:1]
 //线的颜色
 #define lineBackColor [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:1]
 
 #define BlueColor [UIColor colorWithRed:63/255.0 green:136/255.0 blue:189/255.0 alpha:1]
 
 //tabbar的字体颜色
-#define TabberGreen [UIColor colorWithRed:0/255.0 green:150/255.0 blue:247/255.0 alpha:1]
+#define TabberGreen [UIColor colorWithRed:160/255.0 green:23/255.0 blue:44/255.0 alpha:1]
+
 
 
 
