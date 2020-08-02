@@ -71,6 +71,12 @@
 		666A18D424BB53370056AC1D /* ALCSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A18CE24BB53370056AC1D /* ALCSearchView.m */; };
 		666A18D524BB53370056AC1D /* SWTBottomBt.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A18CF24BB53370056AC1D /* SWTBottomBt.m */; };
 		666A18D624BB53370056AC1D /* SWTCateSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A18D124BB53370056AC1D /* SWTCateSearchView.m */; };
+		6694A57524D70D050087E9E7 /* SWTMJMineOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6694A57324D70D050087E9E7 /* SWTMJMineOneCell.m */; };
+		6694A57624D70D050087E9E7 /* SWTMJMineOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6694A57424D70D050087E9E7 /* SWTMJMineOneCell.xib */; };
+		6694A57924D711430087E9E7 /* SWTMineTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6694A57824D711430087E9E7 /* SWTMineTwoCell.m */; };
+		6694A57C24D7116B0087E9E7 /* SWTMineHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6694A57A24D7116B0087E9E7 /* SWTMineHomeButton.m */; };
+		6694A58024D713CC0087E9E7 /* SWTMineThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6694A57E24D713CC0087E9E7 /* SWTMineThreeCell.m */; };
+		6694A58124D713CC0087E9E7 /* SWTMineThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6694A57F24D713CC0087E9E7 /* SWTMineThreeCell.xib */; };
 		66C8F7AB24AB1E85008C7A3A /* noneNet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8F7A524AB1E84008C7A3A /* noneNet@3x.png */; };
 		66C8F7AC24AB1E85008C7A3A /* LTSCNoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C8F7A624AB1E84008C7A3A /* LTSCNoneView.m */; };
 		66C8F7AD24AB1E85008C7A3A /* noneNet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8F7A724AB1E84008C7A3A /* noneNet@2x.png */; };
@@ -214,6 +220,16 @@
 		666A18CF24BB53370056AC1D /* SWTBottomBt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTBottomBt.m; sourceTree = "<group>"; };
 		666A18D024BB53370056AC1D /* SWTCateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTCateButton.h; sourceTree = "<group>"; };
 		666A18D124BB53370056AC1D /* SWTCateSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTCateSearchView.m; sourceTree = "<group>"; };
+		6694A57224D70D050087E9E7 /* SWTMJMineOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWTMJMineOneCell.h; sourceTree = "<group>"; };
+		6694A57324D70D050087E9E7 /* SWTMJMineOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWTMJMineOneCell.m; sourceTree = "<group>"; };
+		6694A57424D70D050087E9E7 /* SWTMJMineOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWTMJMineOneCell.xib; sourceTree = "<group>"; };
+		6694A57724D711430087E9E7 /* SWTMineTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTMineTwoCell.h; sourceTree = "<group>"; };
+		6694A57824D711430087E9E7 /* SWTMineTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTMineTwoCell.m; sourceTree = "<group>"; };
+		6694A57A24D7116B0087E9E7 /* SWTMineHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTMineHomeButton.m; sourceTree = "<group>"; };
+		6694A57B24D7116B0087E9E7 /* SWTMineHomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTMineHomeButton.h; sourceTree = "<group>"; };
+		6694A57D24D713CC0087E9E7 /* SWTMineThreeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWTMineThreeCell.h; sourceTree = "<group>"; };
+		6694A57E24D713CC0087E9E7 /* SWTMineThreeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWTMineThreeCell.m; sourceTree = "<group>"; };
+		6694A57F24D713CC0087E9E7 /* SWTMineThreeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWTMineThreeCell.xib; sourceTree = "<group>"; };
 		66C8F7A524AB1E84008C7A3A /* noneNet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noneNet@3x.png"; sourceTree = "<group>"; };
 		66C8F7A624AB1E84008C7A3A /* LTSCNoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSCNoneView.m; sourceTree = "<group>"; };
 		66C8F7A724AB1E84008C7A3A /* noneNet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noneNet@2x.png"; sourceTree = "<group>"; };
@@ -439,6 +455,16 @@
 		33DC823920EA21BD00D1C283 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6694A57B24D7116B0087E9E7 /* SWTMineHomeButton.h */,
+				6694A57A24D7116B0087E9E7 /* SWTMineHomeButton.m */,
+				6694A57724D711430087E9E7 /* SWTMineTwoCell.h */,
+				6694A57824D711430087E9E7 /* SWTMineTwoCell.m */,
+				6694A57224D70D050087E9E7 /* SWTMJMineOneCell.h */,
+				6694A57324D70D050087E9E7 /* SWTMJMineOneCell.m */,
+				6694A57424D70D050087E9E7 /* SWTMJMineOneCell.xib */,
+				6694A57D24D713CC0087E9E7 /* SWTMineThreeCell.h */,
+				6694A57E24D713CC0087E9E7 /* SWTMineThreeCell.m */,
+				6694A57F24D713CC0087E9E7 /* SWTMineThreeCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -750,9 +776,11 @@
 				337F3EB020EA014600C5526A /* noneDataBg.png in Resources */,
 				666A18BD24BB52F30056AC1D /* mx_pic_selected_no@2x.png in Resources */,
 				337F3E6620E9FE5300C5526A /* LaunchScreen.storyboard in Resources */,
+				6694A57624D70D050087E9E7 /* SWTMJMineOneCell.xib in Resources */,
 				66C8F7AB24AB1E85008C7A3A /* noneNet@3x.png in Resources */,
 				666A18B924BB52F30056AC1D /* mx_picker_back_image@2x.png in Resources */,
 				337F3E6320E9FE5300C5526A /* Assets.xcassets in Resources */,
+				6694A58124D713CC0087E9E7 /* SWTMineThreeCell.xib in Resources */,
 				337F3E6120E9FE3C00C5526A /* Main.storyboard in Resources */,
 				66C8F7AD24AB1E85008C7A3A /* noneNet@2x.png in Resources */,
 				666A18B624BB52F30056AC1D /* mx_pic_selected_yes@2x.png in Resources */,
@@ -831,18 +859,21 @@
 				666A18B524BB52F30056AC1D /* MXImageListController.m in Sources */,
 				66C8F7AE24AB1E85008C7A3A /* LTSCEventBus.m in Sources */,
 				337F3EAB20EA014600C5526A /* BaseNavigationController.m in Sources */,
+				6694A57524D70D050087E9E7 /* SWTMJMineOneCell.m in Sources */,
 				335010E320EDFC9300F8486B /* zkSignleTool.m in Sources */,
 				337F3EAD20EA014600C5526A /* BaseTableViewHeaderFooterView.m in Sources */,
 				666A18C024BB52F30056AC1D /* zkLunBoCell.m in Sources */,
 				666A18BE24BB52F30056AC1D /* MXPhotoPickerController.m in Sources */,
 				337F3EAC20EA014600C5526A /* BaseTableViewController.m in Sources */,
 				666A18C324BB52F30056AC1D /* TYCyclePagerView.m in Sources */,
+				6694A58024D713CC0087E9E7 /* SWTMineThreeCell.m in Sources */,
 				666A18C624BB52F30056AC1D /* zkPhotoShowCell.m in Sources */,
 				66C8F7AC24AB1E85008C7A3A /* LTSCNoneView.m in Sources */,
 				337F3E6920E9FE5300C5526A /* main.m in Sources */,
 				666A18BF24BB52F30056AC1D /* MXImageGroupController.m in Sources */,
 				337F3EB420EA040400C5526A /* UIView+BSExtension.m in Sources */,
 				33DC824F20EA224F00D1C283 /* HangQingVC.m in Sources */,
+				6694A57C24D7116B0087E9E7 /* SWTMineHomeButton.m in Sources */,
 				337F3E5B20E9FE3B00C5526A /* AppDelegate.m in Sources */,
 				335010EE20EE05C100F8486B /* NSString+Size.m in Sources */,
 				666A18BA24BB52F30056AC1D /* MXImagePreviewController.m in Sources */,
@@ -852,6 +883,7 @@
 				666A18D424BB53370056AC1D /* ALCSearchView.m in Sources */,
 				666A188C24BB52A50056AC1D /* UIViewController+ChangeUI.m in Sources */,
 				666A188F24BB52CE0056AC1D /* XPCollectionViewWaterfallFlowLayout.m in Sources */,
+				6694A57924D711430087E9E7 /* SWTMineTwoCell.m in Sources */,
 				666A18BB24BB52F30056AC1D /* MXALAsset.m in Sources */,
 				335010DD20EDF9AE00F8486B /* zkRequestTool.m in Sources */,
 				33DC825520EA245E00D1C283 /* HomeVC.m in Sources */,

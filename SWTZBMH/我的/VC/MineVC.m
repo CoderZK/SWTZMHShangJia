@@ -7,17 +7,73 @@
 //
 
 #import "MineVC.h"
-
+#import "SWTMJMineOneCell.h"
+#import "SWTMineTwoCell.h"
+#import "SWTMineThreeCell.h"
 @interface MineVC ()
-
+@property(nonatomic , strong)NSArray *leftArr;
 @end
 
 @implementation MineVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"卖家中心";
+    self.leftArr = @[@"总资产",@"拍品管理",@"产品库",@"优惠券",@"直播",@"视频"];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"SWTMJMineOneCell" bundle:nil] forCellReuseIdentifier:@"SWTMJMineOneCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SWTMineThreeCell" bundle:nil] forCellReuseIdentifier:@"SWTMineThreeCell"];
+    [self.tableView registerClass:[SWTMineTwoCell class] forCellReuseIdentifier:@"SWTMineTwoCell"];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 2;
+    }
+    return self.leftArr.count;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            return 100;
+        }
+        return 95;
+    }
+    return 50;
+}
+- (UITableViewCell * )tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if(indexPath.row == 0) {
+            SWTMJMineOneCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SWTMJMineOneCell" forIndexPath:indexPath];
+              return cell;
+        }else {
+            SWTMineTwoCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SWTMineTwoCell" forIndexPath:indexPath];
+            return cell;
+        }
+    }else {
+        SWTMineThreeCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SWTMineThreeCell" forIndexPath:indexPath];
+        cell.leftLB.text = self.leftArr[indexPath.row];
+        cell.leftImgV.image = [UIImage imageNamed: [NSString stringWithFormat:@"dyx%d",11+indexPath.row]];
+        return cell;
+    }
+  
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
