@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SWTMineShopSettingCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *leftLB;
+@property (weak, nonatomic) IBOutlet UILabel *leftwoLB;
+@property (weak, nonatomic) IBOutlet UITextField *rightTF;
+@property (weak, nonatomic) IBOutlet UIImageView *rightImgV;
+@property (weak, nonatomic) IBOutlet UISwitch *swithBt;
 
 @end
 

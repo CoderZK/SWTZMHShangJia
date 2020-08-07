@@ -17,7 +17,7 @@
     //self.navigationBar.barTintColor=Red;
     
     //设置背景色,并把黑线去掉
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_1"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"wbg"] forBarMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[[UIImage alloc] init]];
     
     //设置bar的title颜色
@@ -48,8 +48,8 @@
         // button.titleLabel.font = [UIFont systemFontOfSize:20];
         
         //为button设置image(和backgroudImage不一样)
-        [button setImage:[UIImage imageNamed:@"icon_back"] forState:(UIControlStateNormal)];
-        [button setImage:[UIImage imageNamed:@"icon_back"] forState:(UIControlStateHighlighted)];
+        [button setImage:[UIImage imageNamed:@"bback"] forState:(UIControlStateNormal)];
+        [button setImage:[UIImage imageNamed:@"bback"] forState:(UIControlStateHighlighted)];
 
         CGRect frame = CGRectMake(0, 0, 25, 25);
         

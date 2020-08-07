@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SWTMineShopSettingSectionV : UITableViewHeaderFooterView
-
+@property(nonatomic , strong)UILabel *titelLB;
 @end
 
 NS_ASSUME_NONNULL_END

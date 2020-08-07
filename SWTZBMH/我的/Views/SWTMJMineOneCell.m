@@ -14,6 +14,11 @@
     [super awakeFromNib];
     // Initialization code
 }
+- (IBAction)clickAction:(UIButton *)sender {
+    if (self.delegateSignal) {
+        [self.delegateSignal sendNext:@(sender.tag)];
+    }
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

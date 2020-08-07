@@ -35,9 +35,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray *imgArr=@[@"ico_shouye_2",@"ico_shouye_2",@"ico_shouye_2",@"ico_shouye_2"];
-    NSArray *selectedImgArr=@[@"ico_shouye_1",@"ico_shouye_1",@"ico_shouye_1",@"ico_shouye_1"];
-    NSArray *barTitleArr=@[@"首页",@"关注",@"行情",@"我的"];
+    NSArray *imgArr=@[@"dyx18",@"dyx20",@"dyx22",@"dyx24"];
+    NSArray *selectedImgArr=@[@"dyx19",@"dyx21",@"dyx23",@"dyx25"];
+    NSArray *barTitleArr=@[@"首页",@"发布",@"消息",@"我的"];
     NSArray *className=@[@"HomeVC",@"GuanZhuVC",@"HangQingVC",@"MineVC"];
     NSMutableArray *arr=[[NSMutableArray alloc] init];
     for (int i=0; i<className.count; i++)

@@ -10,12 +10,24 @@
 
 @implementation SWTMineShopSettingSectionV
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
+    self  =[super initWithReuseIdentifier:reuseIdentifier];
+    if (self != nil) {
+        
+        self.titelLB = [[UILabel alloc] init];
 
+        self.titelLB.font = kFont(14);
+        self.titelLB.textColor = CharacterColor70;
+        [self addSubview:self.titelLB];
+        
+        [self.titelLB mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self).offset(15);
+            make.right.equalTo(self).offset(-15);
+            make.top.bottom.equalTo(self);
+        }];
+        
+    }
+    self.backgroundColor = BackgroundColor;
+    return self;
+}
 @end

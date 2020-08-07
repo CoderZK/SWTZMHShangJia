@@ -10,6 +10,7 @@
 #import "SWTMJMineOneCell.h"
 #import "SWTMineTwoCell.h"
 #import "SWTMineThreeCell.h"
+#import "SWTShopSettingTVC.h"
 @interface MineVC ()
 @property(nonatomic , strong)NSArray *leftArr;
 @end
@@ -51,6 +52,22 @@
     if (indexPath.section == 0) {
         if(indexPath.row == 0) {
             SWTMJMineOneCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SWTMJMineOneCell" forIndexPath:indexPath];
+            cell.delegateSignal = [[RACSubject alloc] init];
+            @weakify(self);
+            [cell.delegateSignal subscribeNext:^(NSNumber * x) {
+                @strongify(self);
+                if (x.intValue == 100) {
+                    //点击是编辑
+                    SWTShopSettingTVC * vc =[[SWTShopSettingTVC alloc] initWithTableViewStyle:(UITableViewStyleGrouped)];
+                    vc.hidesBottomBarWhenPushed = YES;
+                    [self.navigationController pushViewController:vc animated:YES];
+                    
+                }else if (x.intValue== 101) {
+                    //点击的是设置
+                }
+                
+                
+            }];
               return cell;
         }else {
             SWTMineTwoCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SWTMineTwoCell" forIndexPath:indexPath];

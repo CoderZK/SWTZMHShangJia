@@ -36,21 +36,27 @@
                         <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adG-V8-WOt">
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adG-V8-WOt">
                         <rect key="frame" x="315" y="12" width="35" height="35"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="35" id="8UM-v0-GfQ"/>
                             <constraint firstAttribute="height" constant="35" id="HvT-Wj-TRl"/>
                         </constraints>
                         <state key="normal" image="dyx4"/>
+                        <connections>
+                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0GO-Yo-eL6"/>
+                        </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-5V-NqW">
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-5V-NqW">
                         <rect key="frame" x="355" y="12" width="35" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="GsB-Ui-FA0"/>
                             <constraint firstAttribute="width" constant="35" id="gfs-qq-Gj3"/>
                         </constraints>
                         <state key="normal" image="dyx5"/>
+                        <connections>
+                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="agg-al-c5c"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33p-TY-ha0">
                         <rect key="frame" x="95" y="15" width="40" height="16"/>

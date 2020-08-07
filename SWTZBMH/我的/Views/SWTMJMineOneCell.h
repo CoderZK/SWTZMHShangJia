@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *editBt;
 @property (weak, nonatomic) IBOutlet UIButton *settingBT;
 @property (weak, nonatomic) IBOutlet UIButton *sginLB;
-
+@property(nonatomic , strong)RACSubject *delegateSignal;
 @end
 
 NS_ASSUME_NONNULL_END
